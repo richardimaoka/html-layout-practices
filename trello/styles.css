@@ -1,22 +1,61 @@
 body {
-  background-color: #519839;
+  height: 100svh;
+  overflow: hidden;
+
   padding: 0px;
   margin: 0px;
+
+  background-color: #519839;
 }
 
 .header {
-  display: flex;
+  flex-grow: 0;
   background-color: #448030;
-  border-bottom: solid 0.5px #519839;
+  border-bottom: solid 1px #519839;
+}
+
+.header-container {
+  /* center the items */
+  display: flex;
+  align-items: center;
 }
 
 .header-dropdown {
   margin: 10px;
 }
 
-.toolbar {
-  height: 60px;
+.main-container {
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 20px 1fr;
+}
+
+.sidebar {
   background-color: #3e742b;
+  border-right: solid 1px #519839;
+}
+
+.sidebar-container {
+  width: 10px;
+  padding: 0px 20px;
+
+  /* center the items */
+  display: flex;
+  align-items: center;
+}
+
+.toolbar {
+  background-color: #3e742b;
+}
+
+.toolbar-container {
+  height: 60px;
+  padding: 0px 20px;
+
+  /* center the items */
+  display: flex;
+  align-items: center;
 }
 
 .cards {
