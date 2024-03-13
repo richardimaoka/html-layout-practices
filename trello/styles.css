@@ -1,0 +1,37 @@
+body {
+  background-color: #6a9a23;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  background-color: white;
+}
+
+.header-dropdown {
+  margin: 10px;
+}
+
+.toolbar {
+  height: 60px;
+  background-color: aliceblue;
+}
+
+.cards {
+  display: flex;
+  column-gap: 10px;
+}
+
+.card-list {
+  width: 200px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.card {
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 10px;
+}
