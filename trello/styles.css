@@ -6,6 +6,9 @@ body {
   margin: 0px;
 
   background-color: #519839;
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* header */
@@ -29,6 +32,9 @@ body {
 }
 
 /* main container  */
+.main-container {
+  flex-grow: 1;
+}
 
 .toolbar {
   background-color: #3e742b;
@@ -44,8 +50,6 @@ body {
 }
 
 .main-container {
-  height: 100%;
-
   display: flex;
 }
 
@@ -68,10 +72,12 @@ body {
 
 .contents {
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards {
-  height: calc(100svh - 60px - 44px);
+  flex-grow: 1;
   overflow-x: auto;
   max-width: 100%;
 }
