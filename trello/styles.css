@@ -8,6 +8,8 @@ body {
   background-color: #519839;
 }
 
+/* header */
+
 .header {
   flex-grow: 0;
   background-color: #448030;
@@ -26,6 +28,8 @@ body {
   margin: 10px;
 }
 
+/* main container  */
+
 .toolbar {
   background-color: #3e742b;
 }
@@ -42,9 +46,10 @@ body {
 .main-container {
   height: 100%;
 
-  display: grid;
-  grid-template-columns: 20px 1fr;
+  display: flex;
 }
+
+/* main container > sidebar  */
 
 .sidebar {
   background-color: #3e742b;
@@ -53,32 +58,35 @@ body {
 
 .sidebar-container {
   width: 10px;
-  padding: 0px 20px;
 
   /* center the items */
   display: flex;
   align-items: center;
 }
 
+/* main container > contents */
+
 .contents {
-  flex-grow: 0;
+  max-width: 100%;
 }
 
 .cards {
-  min-width: 0px;
-  max-width: 100%;
   height: calc(100svh - 60px - 44px);
   overflow-x: auto;
+  max-width: 100%;
 }
 
 .cards-container {
   display: flex;
   column-gap: 10px;
-  width: fit-content;
 }
 
 .card-list {
+  /* since it's a flex item, setting width alone doesn't fix the width to 200px 
+     you also need to set `flex-shrink; 0`avoid influence from parent(ancestor) boxes */
   width: 200px;
+  flex-shrink: 0;
+
   border-radius: 8px;
   padding: 10px;
   background-color: #f1f2f4;
