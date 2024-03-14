@@ -18,10 +18,25 @@ body {
   /* center the items */
   display: flex;
   align-items: center;
+
+  padding: 0px 20px;
 }
 
 .header-dropdown {
   margin: 10px;
+}
+
+.toolbar {
+  background-color: #3e742b;
+}
+
+.toolbar-container {
+  height: 60px;
+  padding: 0px 20px;
+
+  /* center the items */
+  display: flex;
+  align-items: center;
 }
 
 .main-container {
@@ -45,22 +60,21 @@ body {
   align-items: center;
 }
 
-.toolbar {
-  background-color: #3e742b;
-}
-
-.toolbar-container {
-  height: 60px;
-  padding: 0px 20px;
-
-  /* center the items */
-  display: flex;
-  align-items: center;
+.contents {
+  flex-grow: 0;
 }
 
 .cards {
+  min-width: 0px;
+  max-width: 100%;
+  height: calc(100svh - 60px - 44px);
+  overflow-x: auto;
+}
+
+.cards-container {
   display: flex;
   column-gap: 10px;
+  width: fit-content;
 }
 
 .card-list {

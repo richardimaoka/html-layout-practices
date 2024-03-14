@@ -1,0 +1,14 @@
+body {
+  overflow: hidden;
+  margin: 0px;
+}
+
+.outer {
+  overflow: auto;
+}
+
+.fixed {
+  background-color: beige;
+  width: 3000px;
+  height: 500px;
+}
