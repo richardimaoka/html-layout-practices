@@ -87,6 +87,52 @@ body {
   margin: 0px 60px;
 }
 
+.card {
+  background-color: white;
+  border-radius: 4px;
+
+  padding: 6px;
+
+  display: grid;
+  grid-template-columns: 104px 1fr;
+  grid-template-rows: 60px 1fr;
+
+  column-gap: 8px;
+}
+
+.card-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.card-image > img {
+  display: block;
+}
+
+.card-desc {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  overflow: hidden;
+}
+
+.card-label {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.card-label-icon {
+  font-size: 13px;
+}
+
+.card-label > span {
+  margin-left: 6px;
+  font-size: 13px;
+}
+
 .news-container {
   height: 60px;
   margin: 0px 60px;
