@@ -55,6 +55,26 @@ body {
 .services-container {
   height: 60px;
   margin: 0px 60px;
+
+  display: flex;
+  align-items: center;
+}
+
+.service-list {
+  display: flex;
+  column-gap: 50px;
+  overflow-x: hidden;
+}
+
+.service-name {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.service-name > span {
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .ad-container {
