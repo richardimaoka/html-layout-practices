@@ -78,13 +78,16 @@ body {
 }
 
 .ad-container {
-  height: 60px;
   margin: 0px 60px;
 }
 
 .top-contents-container {
-  height: 60px;
   margin: 0px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  grid-template-rows: repeat(auto-fill, 100px);
+  row-gap: 20px;
 }
 
 .card {
