@@ -11,11 +11,14 @@ body {
 }
 
 .flex {
-  height: 900px;
+  height: 400px;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .textarea {
   width: 100%;
+  display: block;
   height: 100%;
   resize: none;
 }
